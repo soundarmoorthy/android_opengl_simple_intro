@@ -32,7 +32,6 @@ public class Line {
         // Point to our vertex buffer
         gl.glVertexPointer(2, GL10.GL_FLOAT, 0, vertexFloatBuffer);
 
-        // Draw the vertices as triangle strip
         gl.glDrawArrays(GL10.GL_LINES, 0, vertices.length / 2);
 
         //Disable the client state before leaving

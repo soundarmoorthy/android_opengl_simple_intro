@@ -2,15 +2,7 @@
 
 package com.example.soundararajan.testopengl;
 
-import android.app.Activity;
 import android.opengl.GLSurfaceView;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-
-import java.util.HashMap;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
