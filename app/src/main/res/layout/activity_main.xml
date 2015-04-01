@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:clickable="false">
+    <GridLayout
+        android:id="@+id/btnPanel"
+        android:columnCount="4"
+        android:rowCount="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="X+"
+        android:id="@+id/xplus"
+        />
+
+    <Button
+        android:layout_column="1"
+        android:layout_row="0"
+        android:text="X-"
+        android:id="@+id/xminus"
+        android:layout_width="89dp" />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="0"
+        android:text="Y+"
+        android:id="@+id/yplus"
+        />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="0"
+        android:text="Y-"
+        android:id="@+id/yminus"
+        />
+
+    <Button
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="Z+"
+        android:id="@+id/zplus"
+        />
+
+    <Button
+        android:layout_column="1"
+        android:layout_row="1"
+        android:text="Z-"
+        android:id="@+id/zminus"
+        />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="1"
+        android:text="R+"
+        android:id="@+id/rollplus"
+        />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="1"
+        android:text="R-"
+        android:id="@+id/rollminus"
+        />
+
+        <Button
+        android:layout_column="0"
+        android:layout_row="2"
+        android:text="Yw+"
+        android:id="@+id/yawplus"
+        />
+
+    <Button
+        android:layout_column="1"
+        android:layout_row="2"
+        android:text="Yw-"
+        android:id="@+id/yawminus"
+        />
+
+        <Button
+            android:layout_column="2"
+            android:layout_row="2"
+            android:text="P+"
+            android:id="@+id/pitchplus" />
+
+        <Button
+        android:layout_column="3"
+        android:layout_row="2"
+        android:text="P-"
+        android:id="@+id/pitchminus"
+        />
+    </GridLayout>
+    <LinearLayout
+        android:layout_below="@id/btnPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/shotView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" />
+        </LinearLayout>
+</RelativeLayout>
